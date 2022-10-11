@@ -12,10 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         images.forEach((image) => {
             const style = image.currentStyle || window.getComputedStyle(image, false);
             const url = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-            
-            shownImage.forEach((img) => {
-                view.style.backgroundImage = `url(${url})`;
-            });
+            view.style.backgroundImage = `url(${url})`;
         });
     });
 
