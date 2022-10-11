@@ -19,6 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /**
-     * Popup
+     * Floorplan
      */
+
+    const floorplanBtn = document.querySelector(".floorplan-btn");
+    const floorplanPopup = document.querySelector(".floorplan-popup");
+    const floorplanExit = floorplanPopup.querySelector(".exit");
+
+    floorplanBtn.addEventListener("click", () => {
+        floorplanPopup.style.display = "flex";
+    });
+
+    floorplanExit.addEventListener("click", () => {
+        floorplanPopup.style.display = "none";
+    });
 });
